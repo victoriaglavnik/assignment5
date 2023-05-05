@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+  <h1>Titan Community Bank</h1>
+  <p>A online-banking service for Students, Employees, and Faculty at <br> St.Petersburg College.</br></p>
+</div>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Prequalify.html">Prequalify for Financing</a>
+  <a href="Registration.html">Registration</a>
+
+</div>
+<div class="main">
+<form action="Login.html" method="get"
+  name="Login" id="Login">
+<h1>Login</h1>
+
+  E-mail: <input type="text" name="email" id="email">
+  <br><br>
+  Password: <input type="text" name="password1" id="password1">
+  <br><br>
+  Confirm Password: <input type="text" name="password2" id="password2">
+  <br><br>
+  <button id="reset">Reset</button>
+  <button id="Login">Login</button>
+
+</form>
+</div>
+  <div class="footer">
+    <p>St. Petersburg College<br>
+    P.O. Box 13489<br>
+    St. Petersburg, FL 33733-3489<br>
+    727-341-4772<br>
+    St. Petersburg College is committed to equal access/equal opportunity in its programs, activities, and employment. For additional information visit https://www.spcollege.edu/friends-partners/about/contact-spc.<br>
+    Copyright © 2022 St. Petersburg College</p>
+    </div>
+    </body>
+    </html>
+    <script> 
+    function myFunction(){
+      var email = document.forms["myForm"]["email"].value;
+      var password1 = document.forms["myForm"]["password1"].value;
+      var password2 = document.forms["myForm"]["password2"].value;
+    }
+      if (password1 == password2){
+        window.location.href="spendingtrends.html";
+      }
+      else{
+        alert("Invalid Username and Password");
+      }
+  
+        document.getElementById('clear').addEventListener('click',() => {
+        localStorage.removeItem('username')
+        localStorage.removeItem('password1')
+        localStorage.removeItem('password2')
+        })
+      </script> 
