@@ -82,11 +82,12 @@ window.onload = function () {
     
     var chart = createBarChart(data);
     document.body.appendChild(chart);
-
-
-};
+    
 document.getElementById("reset").addEventListener("click", function() {
     for (j = 0; j < data.length; j++){
          bar.style.height = "0px";
      }
+
+};
+
  })
